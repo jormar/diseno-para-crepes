@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home</title>
+        <link href = "style.css" rel = "stylesheet" type = "text/css" />
+        <script src="js/jquery-1.9.0.js" type="text/javascript"></script>        
+        
+    </head>
+    <body>
+        
+        <header>
+            <a class = "main_logo"></a>
+            <input type = "button" class = "menu_btn" />
+            <div class = "menu">
+                <ul class = "menu_list">
+                    <li>
+                        <a class = "menu_link" href = "galeria.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link" href = "menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link" href = "quienessomos.html">Quienes somos</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link">Link a categoria</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class = "content">
+            
+            <div class = "clear"></div>
+            <div id="middle_container">            
+                <div class = "main_new">
+                    <img class = "main_new_img" alt = "main_crepe" src = "img/food.jpg"/>
+                    <h2 class = "main_new_title">!Nuevo Sabor!</h2>
+                    <p class = "main_new_p">
+                        No dejes de probar este nuevo sabor: Fresa, Cambur y Nutella
+                    </p>
+                    <span class = "main_new_msg">!Pruebalo!</span>
+                </div>
+                <div class = "buttons_container">
+                    <div class = "btn_container">
+                        <!--<img class = "btn_crepe" src = "img/_b_crepe.png" alt = "crepe"/>-->
+                        <!--<input type = "button" class = "main_content_btn" id = "login_btn" value = "Registrarse-->
+                        <a href="registro.html" class ="main_content_btn" id = "register_btn">Registrarse</a>
+                    </div>
+                    <div class = "btn_container">
+                        <!--<img class = "btn_crepe" src = "img/_b_crepe.png" alt = "crepe"/>-->
+                        <!--<input type = "button" class = "main_content_btn" id = "register_btn" value = "Iniciar Sesi&oacute;n"/>-->
+                        <a href="login.html" class ="main_content_btn" id = "register_btn">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "clear"></div> 
+            
+        </div>
+
+        <footer>
+            <div id= "#foot_msg_container">
+                <span class = "rights_reserved margin">
+                    Crepes Gourmet &copy; 2013 J-30714136-0 
+                </span>
+                <span class = "rights_reserved small">
+                    Todos los derechos reservados
+                </span>
+            </div>
+        </footer>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                
+                var height = $(window).height();
+                var heightNoHeader = height-45;
+                $(".content").height(heightNoHeader);
+                $(".menu_btn").click(function(){
+                    $(".menu").slideToggle();
+                });
+            
+            });
+
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home</title>
+        <link href = "style.css" rel = "stylesheet" type = "text/css" />
+        <link href = "css/jquery-ui-1.10.3.custom.min.css" rel = "stylesheet" type = "text/css" />
+        <script src="js/jquery-1.9.0.js" type="text/javascript"></script>        
+        <script src="js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        
+        <header>
+            <a class = "main_logo" href = "home.html"></a>
+            <input type = "button" class = "menu_btn" />
+            <div class = "menu">
+                <ul class = "menu_list">
+                    <li>
+                        <a class = "menu_link" href = "galeria.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link" href = "menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link" href = "quienessomos.html">Quienes somos</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link">Link a categoria</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class = "main_content">
+            <form method="POST" id="register_form">
+                <div class="form_field_container">
+                    <span class="obligatorio">*</span>
+                    <label for="nombre">Nombre:</label>                    
+                    <input name="nombre" type="text" />
+                </div>
+                <div class="form_field_container">
+                    <span class="obligatorio">*</span>
+                    <label for="apellido">Apellido:</label>                    
+                    <input name="apellido" type="text" />
+                </div>
+                <div class="form_field_container">
+                    <label for="sexo">Sexo:</label>
+                    <div class="rb_top_img checked" id="rb_top_fem"></div>
+                    <input class="rb"  name="sexo" type="radio" val="F" checked="checked" id="fem"/><span>Femenino</span>
+                    <div class="rb_top_img" id="rb_top_masc"></div>
+                    <input class="rb" name="sexo" type="radio" val="M" id="masc" /><span>Masculino</span>
+                </div>
+                <div class="form_field_container">
+                    <span class="obligatorio">*</span>
+                    <label for="mail">Correo electrónico:</label>                    
+                    <input name="correo" type="text" />
+                </div>
+                <div class="form_field_container">
+                    <span class="obligatorio">*</span>
+                    <label for="tlf">Teléfono celular:</label>                    
+                    <input name="tlf" type="text" />
+                </div>
+                <div class="form_field_container">
+                    <span class="obligatorio">*</span>
+                    <label for="fecha_nac">Fecha nacimiento:</label>                    
+                    <input id="datepicker" class="fecha_nac_input" name="fecha_nac" type="text" />
+                    <img id="datepicker_img" src="img/_b_calendario.png"/>
+                </div>
+                <div class="form_field_container">
+                    <span class="obligatorio">*</span>
+                    <label for="pwd">Contrasena:</label>                    
+                    <input name="pwd" type="text" />
+                </div>
+                <div class="form_field_container">
+                    <span class="obligatorio">*</span>
+                    <label for="pwd2">Confirmar contrasena:</label>                    
+                    <input name="pwd2" type="text" />
+                </div>
+                <div class = "form_field_container">
+                    <input type = "submit" value="Continuar" />
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                
+                var height = $(window).height();
+                var heightNoHeader = height-45;
+                $(".main_content").height(heightNoHeader);
+                $(".menu_btn").click(function(){
+                    $(".menu").slideToggle();
+                });
+
+                $(".li_hover").click(function(){
+                    $(".detailed_ingredient_container").show();
+                });
+
+                $(".rb_top_img").off('click');
+                $(".rb_top_img").on('click', function(){
+                    $(".rb_top_img").removeClass("checked");
+                    $(this).addClass('checked');
+                    var id = $(this).attr('id');
+                    var splitted_id = id.split("_");
+                    var realId = splitted_id[2];
+                    //$(".rb").attr("checked", "");
+                    $("#"+realId).click();
+                });
+
+                $("#datepicker").datepicker();
+                $.datepicker.formatDate( "dd-mm-yyyy", new Date( 2007, 1 - 1, 26 ) );
+            
+            });
+
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home</title>
+        <link href = "style.css" rel = "stylesheet" type = "text/css" />
+        <script src="js/jquery-1.9.0.js" type="text/javascript"></script>        
+        
+    </head>
+    <body>
+        
+        <header>
+            <a class = "main_logo" href = "home.html"></a>
+
+            <input type = "button" class = "menu_btn" />
+            <a id="go_to_cart">
+                <img src="img/_carrito_crepe.png" />
+                <input type="text" />
+            </a>
+            <div class = "menu">
+                <ul class = "menu_list">
+                    <li>
+                        <a class = "menu_link" href = "galeria.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link" href = "menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link" href = "quienessomos.html">Quienes somos</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link">Link a categoria</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class = "main_content">
+            <div id="welcome_msg_container">
+                <img src="img/_DesplegadoAbajo1.png">
+                <span id="welcome_name">Buenas tardes Ruben López</span>
+                <br>
+                <span class="brown" id="points">Puntos acumulados:</span>
+                <span class="brown" id="points_ammounts">1000</span>
+            </div>
+            <div class = "clear"></div>
+            <div id = "event_btn_container">
+                <div class = "btn_container">                
+                    <a href="seleccion.html" class ="main_content_btn" id = "register_btn">Solicita tu evento</a>
+                </div>
+            </div>
+
+             <ul class = "events_list">
+                <li class = "title">
+                    <h2>Saladas</h2>
+                    <img src="img/_DesplegadoAbajo1.png" />
+                    <table border="1">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>50% del total</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tr class = "border_bottom">
+                            <td>row 1, cell 1</td>
+                            <td>row 1, cell 2</td>
+                            <td>row 1, cell 1</td>
+                            <td><div class="desplegado_arriba"></div></td>
+                        </tr>
+                        <tr class = "border_bottom">
+                            <td>row 2, cell 1</td>
+                            <td>row 2, cell 2</td>
+                            <td>row 1, cell 1</td>
+                            <td><div class="desplegado_arriba"></div></td>
+                        </tr>
+                        <tr class = "border_bottom">
+                            <td>row 2, cell 1</td>
+                            <td>row 2, cell 2</td>
+                            <td>row 1, cell 1</td>
+                            <td><div class="desplegado_arriba"></div></td>
+                        </tr>
+                    </table>
+                    <br>
+                </li>
+                <li class = "title">
+                    <h2>Saladas</h2>
+                    <img src="img/_DesplegadoAbajo1.png" />
+                    <table border="1">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>50% del total</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tr class = "border_bottom">
+                            <td>row 1, cell 1</td>
+                            <td>row 1, cell 2</td>
+                            <td>row 1, cell 1</td>
+                            <td><div class="desplegado_arriba"></div></td>
+                        </tr>
+                        <tr class = "border_bottom">
+                            <td>row 2, cell 1</td>
+                            <td>row 2, cell 2</td>
+                            <td>row 1, cell 1</td>
+                            <td><div class="desplegado_arriba"></div></td>
+                        </tr>
+                        <tr class = "border_bottom">
+                            <td>row 2, cell 1</td>
+                            <td>row 2, cell 2</td>
+                            <td>row 1, cell 1</td>
+                            <td><div class="desplegado_arriba"></div></td>
+                        </tr>
+                    </table>
+                </li>
+
+            </ul>
+
+        </div>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                
+                var height = $(window).height();
+                var heightNoHeader = height-45;
+                $(".main_content").height(heightNoHeader);
+                $(".menu_btn").click(function(){
+                    $(".menu").slideToggle();
+                });
+
+                $(".li_hover").click(function(){
+                    $(".detailed_ingredient_container").show();
+                });
+
+                
+            
+            });
+
+        </script>
+    </body>
+    
+</html>
