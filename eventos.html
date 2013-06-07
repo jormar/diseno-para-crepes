@@ -43,6 +43,22 @@
                 <span class="brown" id="points">Puntos acumulados:</span>
                 <span class="brown" id="points_ammounts">1000</span>
             </div>
+            <div id = "action_list" class = "menu">
+                <ul class = "menu_list">
+                    <li>
+                        <a class = "menu_link">Pagar evento</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link">Consultar evento</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link" >Calificar evento</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link">Eliminar evento</a>
+                    </li>
+                </ul>
+            </div>
             <div class = "clear"></div>
             <div id = "event_btn_container">
                 <div class = "btn_container">                
@@ -51,10 +67,12 @@
             </div>
 
              <ul class = "events_list">
-                <li class = "title">
-                    <h2>Saladas</h2>
-                    <img src="img/_DesplegadoAbajo1.png" />
-                    <table border="1">
+                <li id = "event_1" class = "event">
+                    <div class = "title">
+                        <h2>Saladas</h2>
+                        <img id = "img_1" src="img/_DesplegadoAbajo1.png" />
+                    </div>
+                    <table class = "table" id="table_1" border="1">
                         <tr>
                             <th>Fecha</th>
                             <th>Hora</th>
@@ -80,12 +98,12 @@
                             <td><div class="desplegado_arriba"></div></td>
                         </tr>
                     </table>
-                    <br>
+                    
                 </li>
-                <li class = "title">
+                <li id = "event_2" class = "event title">
                     <h2>Saladas</h2>
-                    <img src="img/_DesplegadoAbajo1.png" />
-                    <table border="1">
+                    <img id = "img_2" src="img/_DesplegadoAbajo1.png" />
+                    <table class = "table" id = "table_2" border="1">
                         <tr>
                             <th>Fecha</th>
                             <th>Hora</th>
@@ -131,7 +149,21 @@
                     $(".detailed_ingredient_container").show();
                 });
 
-                
+                $(".event").off('click');
+                $(".event").on('click', function(){
+                    var id = $(this).attr('id');
+                    var splitted_id = id.split("_");
+                    var id_number = splitted_id[1];
+                    $(".table").hide();
+                    $("#table_"+id_number).show();    
+                });
+
+                $(".desplegado_arriba").off('click');
+                $(".desplegado_arriba").on('click', function(){
+                    console.log("si entea");
+                    $("#action_list").slideToggle();
+
+                });
             
             });
 

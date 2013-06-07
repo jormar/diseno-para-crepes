@@ -87,6 +87,11 @@ body
 	width: 100%;
 	height: 1px;
 }
+.form {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
 
 /*----------------------------HEADER--------------------*/
 
@@ -484,7 +489,7 @@ footer
 }
 .title
 {
-	height: 35px;
+	/*height: 35px;*/
 	background-image: url('img/_categoria_seleccionada.png');
 	background-repeat: repeat-x;
 
@@ -697,7 +702,8 @@ footer
 	float: left;	
 }
 
-.form_field_container input[type=text]
+.form_field_container input[type=text],
+input.text
 {
 	width: 100%;
 	height: 30px;
@@ -780,6 +786,108 @@ footer
 	font-size: 13px;
 }
 
+#seleccion_form
+{
+	width: 100%;
+}
+.search_container input
+{
+	margin-top: 6px!important;
+	background: url('img/buscar.png') no-repeat 99% center ;
+}
+.search_container label {
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+}
+.seleccion_container .item
+{
+	padding: 12px 0;
+	clear: both;
+	border-bottom: 1px solid #5a3e19;
+}
+.seleccion_container .item img
+{
+	float: left;
+	width: 62px;
+	height: 62px;
+	border-radius: 8px;
+	margin-right: 10px;
+	border: 1px solid #f09f44;
+}
+.seleccion_container .item label
+{
+	color: #533b1f;
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	padding: 5px 0;
+}
+.seleccion_container .item input {
+	color: #533b1f;
+	width: 50%;
+	padding: 1px 5px;
+	border: 1px solid #debf9e;
+}
+.seleccion_container .item.active input {
+	border:1px solid #f09f44;
+}
+.custom_checkbox
+{
+	width: 30px;
+	height: 30px;
+	float: left;
+	background: url('img/check.png') no-repeat center center;
+	margin-top: 8px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.active .custom_checkbox
+{
+	background: url('img/check_p.png') no-repeat center center;
+}
+.custom_checkbox input
+{
+	display: none;
+}
+#tabs
+{
+	clear: both;
+}
+#tabs .header li
+{
+	background-color: #5a3d1b;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+#tabs .header li a
+{
+	color: #8a7862;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: 8px 0;
+}
+#tabs .header li.ui-tabs-active
+{
+	background-color: #f79123;
+}
+#tabs .header li.ui-tabs-active a
+{
+	color: #FFF;
+}
+.tab-content {
+	width: 90%;
+	margin: 0 auto;
+}
+#totalSeleccion
+{
+	background: url(img/bordeInput.png) no-repeat center center;
+	background-size: 100% 100%;
+	border-width: 0;
+	text-align: center;
+}
 
 /*----------------------------------REGISTRO-------------------------*/
 #register_form
@@ -863,6 +971,15 @@ footer
 
 .events_list li
 {
+	/*height: 30px;*/
+	width: 100%;
+	float: left;
+	cursor: pointer;
+	/*height: 30px;*/
+}
+
+.events_list li div.title
+{
 	height: 30px;
 }
 
@@ -877,12 +994,14 @@ footer
 .events_list li.title img 
 {
 	top: 0px;
+
 }
 
 .events_list li table 
 {
 	width: 100%;
 	float: left;
+	display: none;
 }
 
 .events_list li table th 
@@ -921,5 +1040,20 @@ footer
 	margin: 0 auto;
 	cursor: pointer;
 	background-image: url('img/_DesplegadoArriba2.png');
+}
+
+#action_list {
+	
+	width: 100%;
+	
+}
+
+#action_list ul 
+{
+	border-left: 1px solid #846e56;
+	border-bottom: 1px solid #846e56;
+	border-right: 1px solid #846e56;
+	width: 90%;
+	margin: 0 auto;
 }
 

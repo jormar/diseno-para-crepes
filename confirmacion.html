@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home</title>
+        <link href = "style.css" rel = "stylesheet" type = "text/css" />
+        <script src="js/jquery-1.9.0.js" type="text/javascript"></script>        
+
+        <!--<link href = "js/jquery-ui-1.10.3/themes/base/jquery-ui.css" rel = "stylesheet" type = "text/css" />-->
+        <script src="js/jquery-ui-1.10.3/ui/jquery-ui.js" type="text/javascript"></script>
+        
+    </head>
+    <body>
+        
+        <header>
+            <a class = "main_logo" href = "home.html"></a>
+
+            <input type = "button" class = "menu_btn" />
+            <a id="go_to_cart">
+                <img src="img/_carrito_crepe.png" />
+                <input id="totalSeleccion" type="text" />
+            </a>
+            <div class = "menu">
+                <ul class = "menu_list">
+                    <li>
+                        <a class = "menu_link" href = "galeria.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link" href = "menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link" href = "quienessomos.html">Quienes somos</a>
+                    </li>
+                    <li>
+                        <a class = "menu_link">Link a categoria</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class = "main_content">
+            <div id="welcome_msg_container">
+                <img src="img/_DesplegadoAbajo1.png">
+                <span id="welcome_name">Buenas tardes Ruben López</span>
+                <br>
+                <span class="brown" id="points">Puntos acumulados:</span>
+                <span class="brown" id="points_ammounts">1000</span>
+            </div>
+
+            <div id="sweet_sour_selector">
+            </div>
+
+            <form id="seleccion_form" class="form seleccion_container">
+                <div id="tabs">
+                    <ul class="header">
+                        <li><a href="#tabs-1">Saladas</a></li>
+                        <li><a href="#tabs-2">Dulces</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab-content">
+                        <!-- Contenido de los extras Saladas -->
+                        <div class="form_field_container search_container">
+                            <label for="s">Pulsa el carrito para continuar</label>
+                            <input name="s" type="text">
+                        </div>
+
+                        <ul>
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Maiz a la crema con queso telita</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Maiz a la crema con queso telita 2</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Maiz a la crema con queso telita 3</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Maiz a la crema con queso telita 4</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Maiz a la crema con queso telita 5</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+                        </ul>
+                    </div>
+                  <div id="tabs-2" class="tab-content">
+                    <!-- Contenido de los extras Dulces -->
+                        <div class="form_field_container search_container">
+                            <label for="s">Pulsa el carrito para continuar</label>
+                            <input name="s" type="text">
+                        </div>
+
+                        <ul>
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Nutella</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Nutella 7</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Nutella 8</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Nutella 9</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+
+                            <li class="item">
+                                <img alt="" src="images/thumb/001.jpg" />
+                                <label for="">Nutella 10</label>
+                                <div class="custom_checkbox">
+                                    <input type="checkbox" />
+                                </div>
+                                <input type="text" class="text" />
+                            </li>
+                        </ul>
+                  </div>
+                </div>
+            </form>
+
+
+
+        </div>
+        <script type="text/javascript">
+
+            $(document).ready(function()
+            {
+                
+                var height = $(window).height();
+                var heightNoHeader = height-45;
+                $(".main_content").height(heightNoHeader);
+                $(".menu_btn").click(function(){
+                    $(".menu").slideToggle();
+                });
+
+                $(".li_hover").click(function(){
+                    $(".detailed_ingredient_container").show();
+                });
+
+
+                // Funcionamiento para los checks
+                $(".custom_checkbox").off("click");
+                $(".custom_checkbox").on("click", function(){
+                    // $(this).toggleClass("active");
+                    $(this).parent().toggleClass("active");
+                    var check = $(this).find("input");
+                    if ( check.is(':checked') ) {
+                        check.attr('checked', false);
+                        $(this).parent().find("input[type=text]").attr("readonly", true);
+                    } else {
+                        check.attr('checked', true);
+                        $(this).parent().find("input[type=text]").attr("readonly", false);
+                    }
+                })
+
+                $(".custom_checkbox").each(function(i){
+                    var check = $(this).find("input");
+                    if ( check.is(':checked') ) {
+                        $(this).parent().find("input[type=text]").attr("readonly", false);
+                    } else {
+                        $(this).parent().find("input[type=text]").attr("readonly", true);
+                    }
+                });
+
+                function actualizarValorTotalSeleccion(){
+                    var total = 0;
+                    $(".seleccion_container .item > input[type=text]").each(function(){
+                        total += parseInt(jQuery(this).val()) || 0;
+                    });
+                    $("#totalSeleccion").attr("value", total);
+                }
+
+                // Funcionamiento de suma automatica de extras
+                $(".seleccion_container .item > input[type=text]").off("change");
+                $(".seleccion_container .item > input[type=text]").on("change", function(e){
+                    var value = parseInt($(this).val());
+                    if (value) {
+                        actualizarValorTotalSeleccion();
+                    } else {
+                        // El valor introducido no es un numero
+                        alert("Debe introducir un número válido")
+                        $(this).attr("value", "");
+                        actualizarValorTotalSeleccion();
+                    }
+                })
+            });
+
+        </script>
+    </body>
+    
+</html>
