@@ -50,7 +50,7 @@
             <div id="sweet_sour_selector">
             </div>
 
-            <form id="seleccion_form" class="form seleccion_container">
+            <form id="seleccion_form" class="form seleccion_container" action="confirmacion.html">
                 <div id="tabs">
                     <ul class="header">
                         <li><a href="#tabs-1">Saladas</a></li>
@@ -110,7 +110,7 @@
                             </li>
                         </ul>
                     </div>
-                  <div id="tabs-2" class="tab-content">
+                    <div id="tabs-2" class="tab-content">
                     <!-- Contenido de los extras Dulces -->
                         <div class="form_field_container search_container">
                             <label for="s">Pulsa el carrito para continuar</label>
@@ -163,7 +163,11 @@
                                 <input type="text" class="text" />
                             </li>
                         </ul>
-                  </div>
+                    </div>
+                </div>
+
+                <div class = "center">
+                    <input type = "submit" value="Ver Resumen" class="custom_btn" />
                 </div>
             </form>
 
@@ -179,7 +183,7 @@
 
                 var height = $(window).height();
                 var heightNoHeader = height-45;
-                $(".main_content").height(heightNoHeader);
+                $(".main_content").css("min-height", heightNoHeader);
                 $(".menu_btn").click(function(){
                     $(".menu").slideToggle();
                 });
@@ -204,6 +208,7 @@
                     }
                 })
 
+                // Verificamos el estado actual de los checks
                 $(".custom_checkbox").each(function(i){
                     var check = $(this).find("input");
                     if ( check.is(':checked') ) {
@@ -213,6 +218,8 @@
                     }
                 });
 
+
+                // Funcion para calcular el total de extras seleccionados
                 function actualizarValorTotalSeleccion(){
                     var total = 0;
                     $(".seleccion_container .item > input[type=text]").each(function(){

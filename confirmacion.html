@@ -47,134 +47,187 @@
                 <span class="brown" id="points_ammounts">1000</span>
             </div>
 
-            <div id="sweet_sour_selector">
-            </div>
+            <form class="confirmation_container">
+                <table border="1" class="resumen">
+                    <thead>
+                        <tr class="theadertop">
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cant.</th>
+                            <th colspan="2" class="noborder" >Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-            <form id="seleccion_form" class="form seleccion_container">
-                <div id="tabs">
-                    <ul class="header">
-                        <li><a href="#tabs-1">Saladas</a></li>
-                        <li><a href="#tabs-2">Dulces</a></li>
-                    </ul>
-                    <div id="tabs-1" class="tab-content">
-                        <!-- Contenido de los extras Saladas -->
-                        <div class="form_field_container search_container">
-                            <label for="s">Pulsa el carrito para continuar</label>
-                            <input name="s" type="text">
-                        </div>
+                        <!-- comienza una seccion (Saladas, por ejemplo) -->
+                        <tr class="theader">
+                            <td colspan="5">Crepes Saladas</td>
+                        </tr>
+                        <tr class="trow">
+                            <td>Maiz a la crema con queso telita</td>
+                            <td>00000.00</td>
+                            <td>000</td>
+                            <td>00000.00</td>
+                            <td class="right">
+                                <a href="#" class="add_extra">
+                                    <img alt="" src="img/extra.png" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="trow">
+                            <td>Maiz a la crema con queso telita</td>
+                            <td>00000.00</td>
+                            <td>000</td>
+                            <td>00000.00</td>
+                            <td class="right">
+                                <a href="#" class="add_extra">
+                                    <img alt="" src="img/extra.png" />
+                                </a>
+                            </td>
+                        </tr>
 
-                        <ul>
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Maiz a la crema con queso telita</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
 
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Maiz a la crema con queso telita 2</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
+                        <!-- comienza una seccion (Dulces, por ejemplo) -->
+                        <tr class="theader">
+                            <td colspan="5">Dulces</td>
+                        </tr>
+                        <tr class="trow">
+                            <td>Maiz a la crema con queso telita</td>
+                            <td>00000.00</td>
+                            <td>000</td>
+                            <td>00000.00</td>
+                            <td class="right">
+                                <a href="#" class="add_extra">
+                                    <img alt="" src="img/extra.png" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="trow">
+                            <td>Maiz a la crema con queso telita</td>
+                            <td>00000.00</td>
+                            <td>000</td>
+                            <td>00000.00</td>
+                            <td class="right">
+                                <a href="#" class="add_extra">
+                                    <img alt="" src="img/extra.png" />
+                                </a>
+                            </td>
+                        </tr>
 
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Maiz a la crema con queso telita 3</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
 
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Maiz a la crema con queso telita 4</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
+                        <!-- Totales -->
+                        <tr class="ttotal">
+                            <td colspan="1">Total</td>
+                            <td></td><!-- Completa la maquetacion -->
+                            <td></td><!-- Completa la maquetacion -->
+                            <td colspan="1" class="">000000.00</td>
+                            <td></td><!-- Completa la maquetacion -->
+                        </tr>
+                    </tbody>
+                </table>
 
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Maiz a la crema con queso telita 5</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
-                        </ul>
-                    </div>
-                  <div id="tabs-2" class="tab-content">
-                    <!-- Contenido de los extras Dulces -->
-                        <div class="form_field_container search_container">
-                            <label for="s">Pulsa el carrito para continuar</label>
-                            <input name="s" type="text">
-                        </div>
-
-                        <ul>
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Nutella</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
-
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Nutella 7</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
-
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Nutella 8</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
-
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Nutella 9</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
-
-                            <li class="item">
-                                <img alt="" src="images/thumb/001.jpg" />
-                                <label for="">Nutella 10</label>
-                                <div class="custom_checkbox">
-                                    <input type="checkbox" />
-                                </div>
-                                <input type="text" class="text" />
-                            </li>
-                        </ul>
-                  </div>
+                <div class = "center">
+                    <a href="#" class ="custom_btn" id="pedir_btn">Pedir</a>
+                    <a href="#" class ="custom_btn" id="cancelar_btn">Cancelar</a>
                 </div>
             </form>
-
-
-
         </div>
+
+
+        <!-- Ventana para los extras -->
+        <div id="dialog-modal-confirm" title="Confirmación" class="hide">
+            <p>¿Está seguro que desea confirmar este pedido?</p>
+            <div class = "center">
+                <a href="#" class ="custom_btn">Aceptar</a>
+                <a href="#" class ="custom_btn close_action">Cancelar</a>
+            </div>
+        </div>
+
+
+        <!-- Ventana para los extras -->
+        <div id="dialog-modal-extra" title="Selección de Extras" class="hide">
+            <div class="extra_container">
+                <div class="custom_checkbox"><input type="checkbox" /></div>
+                <label>Extra 1</label>
+            </div>
+            <div class="extra_container">
+                <div class="custom_checkbox"><input type="checkbox" /></div>
+                <label>Extra 2</label>
+            </div>
+            <div class="extra_container">
+                <div class="custom_checkbox"><input type="checkbox" /></div>
+                <label>Extra 3</label>
+            </div>
+            <div class="extra_container">
+                <div class="custom_checkbox"><input type="checkbox" /></div>
+                <label>Extra 4</label>
+            </div>
+            <div class="extra_container">
+                <div class="custom_checkbox"><input type="checkbox" /></div>
+                <label>Extra 5</label>
+            </div>
+            <div class="extra_container">
+                <div class="custom_checkbox"><input type="checkbox" /></div>
+                <label>Extra 6</label>
+            </div>
+            <div class = "center">
+                <a href="#" class ="custom_btn accept_action">Aceptar</a>
+                <a href="#" class ="custom_btn close_action">Cancelar</a>
+            </div>
+        </div>
+
         <script type="text/javascript">
 
             $(document).ready(function()
             {
-                
+                /*
+                 *  Funcionamiento de los diaogos modales en General
+                 */
+                $(document).on("click", ".close_action", function(e){
+                    $( this ).parent().parent().dialog( "close" );
+                    e.preventDefault();
+                    return false;
+                });
+
+
+
+                /*
+                 *  Funcionamiento del dialogo de confirmacion
+                 */
+                $("#pedir_btn").on("click", function(e){
+                    $( "#dialog-modal-confirm" ).dialog({
+                        // height: 140,
+                        // width: "30%",
+                        modal: true
+                    });
+                    e.preventDefault();
+                    return false;
+                });
+
+
+
+                /*
+                 *  Funcionamiento del dialogo de extras
+                 */
+                $(".add_extra").on("click", function(e){
+                    $( "#dialog-modal-extra" ).dialog({
+                        modal: true
+                    });
+                    e.preventDefault();
+                    return false;
+                });
+
+                $("#dialog-modal-extra .accept_action").on("click", function(e){
+                    // Por ahora, unicamente cerramos la ventana de extras
+                    // ...Aqui deberiamos hacer algo con estos extras seleccionados
+
+                    // Cerrar dialogo
+                    $( this ).parent().parent().dialog( "close" );
+                });
+
+
+
+
                 var height = $(window).height();
                 var heightNoHeader = height-45;
                 $(".main_content").height(heightNoHeader);
@@ -205,33 +258,12 @@
                 $(".custom_checkbox").each(function(i){
                     var check = $(this).find("input");
                     if ( check.is(':checked') ) {
-                        $(this).parent().find("input[type=text]").attr("readonly", false);
+                        $(this).parent().addClass("active");
                     } else {
-                        $(this).parent().find("input[type=text]").attr("readonly", true);
+                        $(this).parent().removeClass("active");
                     }
                 });
 
-                function actualizarValorTotalSeleccion(){
-                    var total = 0;
-                    $(".seleccion_container .item > input[type=text]").each(function(){
-                        total += parseInt(jQuery(this).val()) || 0;
-                    });
-                    $("#totalSeleccion").attr("value", total);
-                }
-
-                // Funcionamiento de suma automatica de extras
-                $(".seleccion_container .item > input[type=text]").off("change");
-                $(".seleccion_container .item > input[type=text]").on("change", function(e){
-                    var value = parseInt($(this).val());
-                    if (value) {
-                        actualizarValorTotalSeleccion();
-                    } else {
-                        // El valor introducido no es un numero
-                        alert("Debe introducir un número válido")
-                        $(this).attr("value", "");
-                        actualizarValorTotalSeleccion();
-                    }
-                })
             });
 
         </script>
